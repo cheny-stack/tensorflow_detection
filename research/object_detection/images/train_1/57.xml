@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imageface</folder>
+	<filename>57.jpg</filename>
+	<path>F:\BaiduNetdiskDownload\imageface\57.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>374</width>
+		<height>374</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fg</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>29</xmin>
+			<ymin>14</ymin>
+			<xmax>332</xmax>
+			<ymax>317</ymax>
+		</bndbox>
+	</object>
+</annotation>

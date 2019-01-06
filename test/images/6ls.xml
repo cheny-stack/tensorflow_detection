@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>6ls.jpg</filename>
+	<path>C:\Users\pc\Desktop\image\6ls.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>429</width>
+		<height>429</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>liangsu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>72</xmin>
+			<ymin>64</ymin>
+			<xmax>361</xmax>
+			<ymax>372</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>GetImage.jpg</filename>
+	<path>F:\BaiduNetdiskDownload\imageface\test\GetImage.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>394</width>
+		<height>394</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gg</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>37</xmin>
+			<ymin>38</ymin>
+			<xmax>348</xmax>
+			<ymax>349</ymax>
+		</bndbox>
+	</object>
+</annotation>

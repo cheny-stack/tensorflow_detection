@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>5ls.jpg</filename>
+	<path>C:\Users\pc\Desktop\image\5ls.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>346</width>
+		<height>346</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>liangsu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>34</ymin>
+			<xmax>281</xmax>
+			<ymax>295</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>14ls.jpg</filename>
+	<path>C:\Users\pc\Desktop\image\14ls.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>339</width>
+		<height>339</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>liangsu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>56</xmin>
+			<ymin>34</ymin>
+			<xmax>268</xmax>
+			<ymax>291</ymax>
+		</bndbox>
+	</object>
+</annotation>

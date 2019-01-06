@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>11.jpg</filename>
+	<path>D:\PycharmProjects\models-r1.5\test\images\11.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>379</width>
+		<height>379</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>caibo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>47</ymin>
+			<xmax>320</xmax>
+			<ymax>319</ymax>
+		</bndbox>
+	</object>
+</annotation>
