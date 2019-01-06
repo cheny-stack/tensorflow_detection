@@ -58,7 +58,8 @@ def class_text_to_int(row_label):
     elif row_label == 'ly':
         return 7
     else:
-        None
+        return 8
+        # None
 
 
 def split(df, group):
