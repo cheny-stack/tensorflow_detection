@@ -32,3 +32,8 @@ item {
   id: 7
   name: 'ly'
 }
+
+item {
+  id: 8
+  name: 'other'
+}

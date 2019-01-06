@@ -59,6 +59,11 @@ label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+tf.device('/gpu:3')
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
+config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
+
 # Load the Tensorflow model into memory.
 detection_graph = tf.Graph()
 with detection_graph.as_default():
