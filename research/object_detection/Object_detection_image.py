@@ -16,6 +16,7 @@
 ## but I changed it to make it more understandable to me.
 
 # Import packages
+import json
 import os
 import cv2
 import numpy as np
@@ -58,10 +59,10 @@ label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-tf.device('/gpu:3')
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
-config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
+# os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+# tf.device('/gpu:3')
+# gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
+# config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
 # Load the Tensorflow model into memory.
 detection_graph = tf.Graph()
@@ -94,9 +95,16 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 # Load image using OpenCV and
 # expand image dimensions to have shape: [1, None, None, 3]
 # i.e. a single-column array, where each item in the column has the pixel RGB value
+id_name_str=u'[{"id":1,"name":"qg","real_name":"秦刚"},{"id":2,"name":"xl","real_name":"许玲"},{"id":3,"name":"cb","real_name":"蔡晓东"},{"id":4,"name":"gg","real_name":"黄朝光"},{"id":5,"name":"fg","real_name":"梁发记"},{"id":6,"name":"mg","real_name":"陈明瑶"},{"id":7,"name":"ly","real_name":"李燕"},{"id":8,"name":"other","real_name":"其他"}]'
+id_name_map_list= json.loads(json.loads(json.dumps(id_name_str),encoding="UTF-8"))
+id_name_map={}
+for p in id_name_map_list:
+    name=p['name']
+    id_name_map[name]=p['real_name']
 
-path="/home/omnisky/chenyun/workspase/models-r1.5/research/object_detection/images/test_detection/"
-path_save="/home/omnisky/chenyun/workspase/models-r1.5/research/object_detection/images/test_detection/res/"
+
+path="D:/PycharmProjects/models-r1.5/research/object_detection/images/test_detection/"
+path_save="D:/PycharmProjects/models-r1.5/research/object_detection/images/test_detection/res/"
 file_list=os.listdir(path)
 for file in file_list:
     print(path+file)
@@ -118,9 +126,13 @@ for file in file_list:
         category_index,
         use_normalized_coordinates=True,
         line_thickness=8,
-        min_score_thresh=0.80)
+        max_boxes_to_draw=1,
+        min_score_thresh=0.70)
     # cv2.imwrite(path_save+file, image)
-    cv2.imshow('Object detector', image)
+
+
+    cv2.imshow('show：', image)
+
     #
     # # Press any key to close the image
     cv2.waitKey(0)
