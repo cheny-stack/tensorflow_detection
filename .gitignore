@@ -90,3 +90,7 @@ ENV/
 
 # PyCharm
 .idea/
+/research/object_detection/inference_graph
+/research/object_detection/inference_graph1
+/research/object_detection/images
+/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28
